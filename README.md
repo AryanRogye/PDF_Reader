@@ -5,8 +5,7 @@ PDF Analyzer is a macOS SwiftUI app that lets you drag-and-drop PDF files, revie
 ## Features
 - Drag-and-drop drop zone that accepts PDFs and animates when users hover files.
 - List of dropped documents with creation-time metadata, delete swipe actions, and quick Finder access.
-- Toast notifications that deliver contextual tips without interrupting the workflow.
-- Secondary window scaffolding ready for future analysis modules.
+- Secondary window scaffolding ready for upcoming PDF insight modules.
 
 ## Requirements
 - macOS 14 (Sonoma) or newer.
@@ -14,9 +13,7 @@ PDF Analyzer is a macOS SwiftUI app that lets you drag-and-drop PDF files, revie
 - Swift Package Manager (SPM) to resolve third-party packages.
 
 ## Getting Started
-1. Clone the repository: `git clone https://github.com/<your-account>/PDF_Analyzer.git`
-2. Open `PDF_Analyzer.xcodeproj` in Xcode.
-3. Select the `PDF_Analyzer` scheme and press `Run` to launch the macOS app.
+Open `PDF_Analyzer.xcodeproj` in Xcode, select the `PDF_Analyzer` scheme, and press `Run`.
 
 ## Project Structure
 - `PDF_AnalyzerApp.swift` – App entry point that wires environment objects and windows.
@@ -32,6 +29,7 @@ The app adheres to MVVM. View models own state and side effects, while SwiftUI v
 - [SimpleToast](https://github.com/thomasvisser/SwiftUI-Toast) – Lightweight toast presentation for SwiftUI.
 
 ## Roadmap Ideas
+- Integrate Apple’s Foundation model APIs (and optionally Ollama) to contextualize on-screen PDF content.
 - Implement PDF parsing and summary generation in the secondary window.
 - Persist dropped file history across launches.
 - Add validation feedback for unsupported file types.
